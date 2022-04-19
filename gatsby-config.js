@@ -7,7 +7,7 @@ module.exports = {
     // Main Site Title
     title: `purplehayes | portfolio`,
     // Description that goes under your name in main bio
-    description: `Aspiring Software Engineer `,
+    description: `Aspiring Software Engineer and Student`,
     // Optional: Twitter account handle
     author: ``,
     // Optional: Github account URL
