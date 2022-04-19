@@ -54,7 +54,7 @@ module.exports = {
       {
         name: 'Other',
         description:
-          'Agile, Kubernetes, Eagle, AutoCAD, LibreCAD, KiCad, Adobe Suite (Illustrator, Photoshop, Lightroom, InDesign)',
+          'Git, GitHub, WordPress, JetBrains Tools (IntelliJ, PyCharm, CLion), Visual Studio 2022, Unity, Eagle, AutoCAD, LibreCAD, KiCad, Adobe Suite (Illustrator, Photoshop, Lightroom, InDesign), Agile, Kubernetes',
       },
     ],
   },
