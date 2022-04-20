@@ -7,7 +7,7 @@ module.exports = {
     // Main Site Title
     title: `purplehayes | portfolio`,
     // Description that goes under your name in main bio
-    description: `Aspiring Software Engineer and Student`,
+    description: `Student and Aspiring Software Engineer`,
     // Optional: Twitter account handle
     author: ``,
     // Optional: Github account URL
@@ -28,7 +28,7 @@ module.exports = {
       {
         name: 'Minecraft Plugins',
         description:
-          'BoosterBossbar: Rainbow "interactive" boss bar, TurkeyEventPlugin: Thanksgiving plugin, spawns Turkeys that drop eggs with predetermined rewards, more (private, commissioned plugins)',
+          'BoosterBossbar, a plugin that displays a Rainbow, interactive boss bar and TurkeyEventPlugin, a Thanksgiving event plugin which spawns Turkeys that drop eggs with predetermined rewards',
         link: 'https://github.com/hebounds/',
       } // maybe need a , here
     ],
@@ -38,7 +38,12 @@ module.exports = {
         name: 'Word of Mouth Bakery (not related to CS)',
         description: 'General Employee, June 2021 - Present',
         link: 'https://wordofmouthbakery.com/',
-      } // maybe need a , here
+      }, // maybe need a , here
+      {
+        name: 'Freelancer',
+        description: 'Developed Minecraft plugins, configured game servers, and created general design materials, November 2020 - February 2021',
+        link: 'https://github.com/hebounds/'
+      }
     ],
     // Optional: List your skills, they must have `name` and `description`.
     skills: [
