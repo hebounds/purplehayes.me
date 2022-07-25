@@ -1,0 +1,262 @@
+:root {
+    --text: #F4F3EE;
+    --background: #131312;
+    --item: #242324;
+    --shadow: #1F1E1F;
+    --accent-1: #BB87FD;
+    --accent-2: #03DBC4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: background-color 1s ease, color 0.1s ease, background 1s ease;
+}
+
+html {
+    background: var(--background);
+    color: var(--text);
+    font-family: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+#portfolio-darkmode {
+    display: none;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 20px;
+    right: 20px;
+    background: url("images/Bounds-DarkModeIconAltSmall.png");
+    color: var(--text);
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+#portfolio-darkmode:hover {
+    transform: scale(1.05);
+}
+
+#portfolio-darkmode:active {
+    transform: scale(0.9);
+}
+
+#portfolio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.portfolio-item {
+    background: var(--item);
+    width: 70%;
+    margin-top: 40px;
+    text-align: left;
+    box-shadow: 0px 7px 0px 0px var(--shadow);
+}
+
+.portfolio-text {
+    margin: 40px;
+    text-align: left;
+}
+
+.text-header {
+    width: 200px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.text-standard {
+    padding-top: 20px;
+    font-size: 24px;
+}
+
+.portfolio-text-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: left;
+}
+
+.portfolio-text-list p:first-of-type {
+    padding-top: 20px;
+}
+
+.text-list-header {
+    padding-top: 40px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.text-list-standard {
+    padding-top: 10px;
+    font-size: 24px;
+}
+
+#portfolio-header {
+    border-radius: 1000px;
+    width: fit-content;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+#portfolio-about, #portfolio-projects, #portfolio-experience, #portfolio-skills {
+    border-radius: 10px;
+}
+
+#portfolio-header-avatar {
+    background-color: transparent;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    perspective: 1000px;
+}
+
+#portfolio-header-avatar-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+#portfolio-header-avatar:hover #portfolio-header-avatar-inner {
+    transform: rotateY(180deg);
+}
+
+#portfolio-header-avatar-front {
+
+}
+
+#portfolio-header-avatar-back {
+    transition: transform 0.6s;
+    transform: rotateY(180deg);
+}
+
+#portfolio-header-avatar-front, #portfolio-header-avatar-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#portfolio-header-avatar-image-profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: none;
+}
+
+#portfolio-header-avatar-image-standard {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: none;
+    background: url("images/Bounds-DarkModeIconAlt.png");
+    cursor: pointer;
+    transition: transform 0.6s, background 0.6s ease;
+}
+
+#portfolio-header-avatar-image-standard:hover {
+    transform: scale(1.05);
+}
+
+#portfolio-header-avatar-image-standard:active {
+    transform: scale(0.7);
+}
+
+#portfolio-header-text {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#portfolio-header-name {
+    padding-top: 40px;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#portfolio-header-descriptor {
+    color: var(--accent-1);
+}
+
+#icon-links {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#github {
+    text-decoration: none;
+    color: var(--text);
+    transition: color .2s;
+    margin-right: 10px;
+}
+
+#github:hover {
+    color: var(--accent-2);
+}
+
+#linkedin {
+    text-decoration: none;
+    color: var(--text);
+    transition: color .2s;
+    margin-right: 10px;
+}
+
+#linkedin:hover {
+    color: var(--accent-2);
+}
+
+#instagram {
+    text-decoration: none;
+    color: var(--text);
+    transition: color .2s;
+}
+
+#instagram:hover {
+    color: var(--accent-2);
+}
+
+#portfolio-footer-text {
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 764px) {
+    #portfolio-header-avatar {
+        display: none;
+    }
+
+    #portfolio-header-text {
+        padding-right: 30px;
+        padding-left: 30px;
+        text-align: center;
+    }
+
+    #icon-links {
+        justify-content: center;
+    }
+
+    #portfolio-darkmode {
+        display: initial;
+    }
+}

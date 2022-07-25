@@ -1,0 +1,7 @@
+:root {
+    --text: #FFFFFF;
+    --background: #131312;
+    --item: #1F1E1F;
+    --accent-1: #BB87FD;
+    --accent-2: #03DBC4;
+}
