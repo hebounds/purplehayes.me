@@ -1,3 +1,3 @@
 # Hayes Bounds' Personal Portfolio
 
-Using the "Devfolio" theme by Ryan Fitzgerald
+Personal Portfolio in pure HTML/CSS/JS, mainly created in order to further my raw ability with web development languages
